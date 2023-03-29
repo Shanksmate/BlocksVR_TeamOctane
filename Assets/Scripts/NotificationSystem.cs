@@ -63,5 +63,10 @@ public class NotificationSystem : MonoBehaviour
         }
 
     }
+
+    public void UpdateDockImage (Sprite sourceImage)
+    {
+        currentDockImage.sprite = sourceImage;
+    }
 }
 

@@ -24,8 +24,6 @@ public class ObjectivesManager : MonoBehaviour
         if (objective != null)
         {
             objective.isOn = true;
-            Color color = GetComponentInChildren<Color>();
-            color = Color.green;
         }
 
     }
