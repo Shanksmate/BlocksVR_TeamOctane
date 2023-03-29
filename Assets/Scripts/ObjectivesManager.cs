@@ -7,7 +7,8 @@ using UnityEngine.UI;
 
 public class ObjectivesManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int boardnumber;
+    public int boardcount;
     void Start()
     {
         
@@ -27,6 +28,23 @@ public class ObjectivesManager : MonoBehaviour
         }
 
     }
+
+    public void OnBoardFixed(Toggle boardToggle)
+    {
+     
+        boardcount++;
+        if(boardcount == boardnumber)
+        {
+            CheckObjective(boardToggle);
+        }
+
+    }
+
+    public void OnBoardRemoved()
+    {
+        boardcount--;
+    }
+
 
     
 }

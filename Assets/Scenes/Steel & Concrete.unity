@@ -13560,6 +13560,18 @@ MonoBehaviour:
           m_StringArgument: Rebar
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4305931682281148363}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   m_HoverExited:
     m_PersistentCalls:
       m_Calls:
@@ -13567,6 +13579,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: NotificationSystem, Assembly-CSharp
         m_MethodName: ShowMessage
         m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4305931682281148363}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15762,7 +15786,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2361710871456470048}
+        m_TargetAssemblyTypeName: ObjectivesManager, Assembly-CSharp
+        m_MethodName: OnBoardFixed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1407616324}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -24115,36 +24151,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2361710871456470048}
         m_TargetAssemblyTypeName: ObjectivesManager, Assembly-CSharp
-        m_MethodName: CheckObjective
+        m_MethodName: OnBoardFixed
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1407616324}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2051008639}
-        m_TargetAssemblyTypeName: NotificationSystem, Assembly-CSharp
-        m_MethodName: UpdateDock
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 4
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2051008639}
-        m_TargetAssemblyTypeName: NotificationSystem, Assembly-CSharp
-        m_MethodName: UpdateDockImage
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 21300000, guid: 003613fc103bead41b7ac1b692f36687,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -48766,7 +48777,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2361710871456470048}
+        m_TargetAssemblyTypeName: ObjectivesManager, Assembly-CSharp
+        m_MethodName: OnBoardFixed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1407616324}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -56955,6 +56978,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de6cb9bcfc700ae4c8fb8164689bb1c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boardnumber: 4
+  boardcount: 0
 --- !u!33 &2404398584355058967
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -59442,6 +59467,7 @@ GameObject:
   - component: {fileID: 549769962}
   - component: {fileID: 549769958}
   - component: {fileID: 4305931682281148362}
+  - component: {fileID: 4305931682281148363}
   m_Layer: 0
   m_Name: Step 1 - Rebar
   m_TagString: Untagged
@@ -60029,6 +60055,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Keys:
   - {fileID: 11400000, guid: 585dc9b17fc305e4d9f182f26c1a6e96, type: 2}
+--- !u!114 &4305931682281148363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3497729700653405555}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.49261305, g: 0.7913688, b: 0.8490566, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!23 &4314733442883335272
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66363,7 +66407,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2361710871456470048}
+        m_TargetAssemblyTypeName: ObjectivesManager, Assembly-CSharp
+        m_MethodName: OnBoardFixed
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1407616324}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
