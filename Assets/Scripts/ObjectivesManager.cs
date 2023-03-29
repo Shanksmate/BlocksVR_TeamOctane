@@ -7,11 +7,18 @@ using UnityEngine.UI;
 
 public class ObjectivesManager : MonoBehaviour
 {
-    public int boardnumber;
-    public int boardcount;
+    public int boardNumber;
+    public int boardCount;
+
+    public int acrowNumber;
+    public int acrowCount;
+
+    public int flatTieNumber;
+    public int flatTieCount;
+
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -32,8 +39,8 @@ public class ObjectivesManager : MonoBehaviour
     public void OnBoardFixed(Toggle boardToggle)
     {
      
-        boardcount++;
-        if(boardcount == boardnumber)
+        boardCount++;
+        if(boardCount == boardNumber)
         {
             CheckObjective(boardToggle);
         }
@@ -42,9 +49,24 @@ public class ObjectivesManager : MonoBehaviour
 
     public void OnBoardRemoved()
     {
-        boardcount--;
+        boardCount--;
+    }
+
+    public void OnAcrowFixed(Toggle acrowToggle)
+    {
+        acrowCount++;
+        if(acrowCount == acrowNumber)
+        {
+            CheckObjective(acrowToggle);
+        }
+    }
+
+    public void OnAcrowRemoved()
+    {
+        acrowCount--;
     }
 
 
-    
+
+
 }
