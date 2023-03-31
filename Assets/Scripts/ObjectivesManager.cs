@@ -16,10 +16,17 @@ public class ObjectivesManager : MonoBehaviour
     public int flatTieNumber;
     public int flatTieCount;
 
+    public int plankBrace;
+    public int plankBraceCount;
+
     public UnityEvent onBoardCompleted;
+    public UnityEvent onBoardFlatTieCompleted;
+    public UnityEvent onAcrowCompleted;
+    public UnityEvent onPlankBraceCompleted;
+
     public UnityEvent onObjectivesCompleted;
     private int completedTaskCount;
-    private int maxCompletedTaskCount = 5;
+    private int maxCompletedTaskCount = 4;
 
     void Start()
     {
