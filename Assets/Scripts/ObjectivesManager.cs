@@ -17,6 +17,9 @@ public class ObjectivesManager : MonoBehaviour
     public int flatTieCount;
 
     public UnityEvent onBoardCompleted;
+    public UnityEvent onObjectivesCompleted;
+    private int completedTaskCount;
+    private int maxCompletedTaskCount = 5;
 
     void Start()
     {
@@ -31,9 +34,15 @@ public class ObjectivesManager : MonoBehaviour
 
     public void CheckObjective(Toggle objective = null)
     {
-        if (objective != null)
+        if (completedTaskCount == maxCompletedTaskCount)
+        {
+            onObjectivesCompleted.Invoke();
+            return;
+        }
+        else if (objective != null)
         {
             objective.isOn = true;
+            completedTaskCount++;
         }
 
     }
