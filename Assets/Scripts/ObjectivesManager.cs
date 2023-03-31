@@ -16,7 +16,7 @@ public class ObjectivesManager : MonoBehaviour
     public int flatTieNumber;
     public int flatTieCount;
 
-    public int plankBrace;
+    public int plankBraceNumber;
     public int plankBraceCount;
 
     public UnityEvent onBoardCompleted;
@@ -83,6 +83,25 @@ public class ObjectivesManager : MonoBehaviour
     public void OnAcrowRemoved()
     {
         acrowCount--;
+    }
+
+    public void OnPlankBraceFixed(Toggle braceToggle)
+    {
+
+        plankBraceCount++;
+        if (plankBraceCount == plankBraceNumber)
+        {
+            CheckObjective(braceToggle);
+            onPlankBraceCompleted.Invoke();
+            //mixer anchor on
+            //mixer functionality on 
+        }
+
+    }
+
+    public void OnPlankBraceRemoved()
+    {
+        plankBraceCount--;
     }
 
 
