@@ -58,7 +58,7 @@ public class NotificationSystem : MonoBehaviour
         }
         if (objectiveIndex == "5")
         {
-            currentDockObjective.text = "Mix and pour the reinforced concrete mix";
+            currentDockObjective.text = "Using the ratio [ 3 : 3 : 2 ] Mix and push the button to pour the reinforced concrete mix";
             //currentDockImage.sprite = sourceImage;
         }
 

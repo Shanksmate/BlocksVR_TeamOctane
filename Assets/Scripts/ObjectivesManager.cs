@@ -16,6 +16,8 @@ public class ObjectivesManager : MonoBehaviour
     public int flatTieNumber;
     public int flatTieCount;
 
+    public UnityEvent onBoardCompleted;
+
     void Start()
     {
 
@@ -43,6 +45,7 @@ public class ObjectivesManager : MonoBehaviour
         if(boardCount == boardNumber)
         {
             CheckObjective(boardToggle);
+            onBoardCompleted.Invoke();
         }
 
     }
